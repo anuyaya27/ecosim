@@ -54,11 +54,16 @@ def simulate(policy_params, data_path):
     avg_post_tax_income = df['post_tax_income'].mean()
     gov_deficit = (ubi * len(df)) - df['tax_paid'].sum()
 
+    # Add to end of simulate() return:
     return {
         'gini': round(gini, 4),
         'avg_post_tax_income': round(avg_post_tax_income, 2),
-        'gov_deficit': round(gov_deficit, 2)
+        'gov_deficit': round(gov_deficit, 2),
+        'pre_tax_distribution': df['annual_income'].tolist(),
+        'post_tax_distribution': df['post_tax_income'].tolist()
     }
+
+
 
 if __name__ == "__main__":
     # Example usage
@@ -67,5 +72,5 @@ if __name__ == "__main__":
         'tax_brackets': [(0, 0.1), (20000, 0.2), (60000, 0.3)],
         'minimum_wage': 15
     }
-    results = simulate(params, "agents_sample.csv")
+    results = simulate(params, "data/agents_sample.csv")
     print(results)
