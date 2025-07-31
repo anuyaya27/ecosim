@@ -1,6 +1,6 @@
 # Ecosim
 <p align="center">
-  <img src="assets/ecosim logo.png" alt="EcoSim Logo" width="250"/>
+  <img src="ecosim logo.png" alt="EcoSim Logo" width="250"/>
 </p>
 
 <h3 align="center">EcoSim</h3>
