@@ -1,4 +1,12 @@
 # Ecosim
+<p align="center">
+  <img src="assets/ecosim-logo.png" alt="EcoSim Logo" width="250"/>
+</p>
+
+<h3 align="center">EcoSim</h3>
+<p align="center"><em>The Bloomberg Terminal for Economic Policy.</em></p>
+
+<br/>
 
 **Ecosim** is an interactive policy simulation tool designed to help users understand the economic effects of changes in government policies. It models the impact of reforms like Universal Basic Income (UBI), progressive tax structures, and minimum wage adjustments on various income groups using real-world data and principles from behavioral economics.
 
